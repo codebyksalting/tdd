@@ -1,0 +1,273 @@
+/*--------------------------------------------------------------
+# Variables
+--------------------------------------------------------------*/
+:root {
+    --primary-color: #0074BA;
+    --secondary-color: #329DAE;
+    --highlight-color: #DF5909;
+}
+
+/**
+ * Style ACF
+ */
+body .acf-field .acf-label label {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+
+body .acf-flexible-content .layout {
+    border-top: 5px solid var(--primary-color);
+    transition: all 0.3s;
+}
+
+body .acf-flexible-content .layout:hover {
+    border-top: 5px solid var(--highlight-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+body .acf-flexible-content .layout .acf-fc-layout-order {
+    transform: translateY(-1px);
+}
+
+body .acf-flexible-content .layout .acf-fc-layout-controls {
+    top: 13px;
+}
+
+body .acf-flexible-content .layout .acf-fc-layout-handle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--primary-color);
+    transition: all 0.3s;
+}
+
+body .acf-flexible-content .layout:hover .acf-fc-layout-handle {
+    color: var(--highlight-color);
+}
+
+body .acf-flexible-content .layout .acf-fc-layout-order {
+    background-color: var(--primary-color);
+    color: #FFF;
+    transition: all 0.3s;
+}
+
+body .acf-flexible-content .layout:hover .acf-fc-layout-order {
+    background-color: var(--highlight-color);
+}
+
+body .acf-accordion .acf-accordion-title label {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.4em;
+    color: var(--secondary-color);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+body .acf-accordion.-open .acf-accordion-title label {
+    color: var(--highlight-color);
+}
+
+body .acf-accordion .acf-accordion-title .acf-accordion-icon {
+    float: left;
+    margin-right: 3px;
+}
+
+body .acf-field-accordion .dashicons,
+body .acf-field-accordion .dashicons-before::before {
+    color: var(--secondary-color);
+}
+
+body .acf-field-accordion.-open .dashicons,
+body .acf-field-accordion.-open .dashicons-before::before {
+    color: var(--highlight-color);
+}
+
+body .acf-field.acf-accordion .acf-input.acf-accordion-content {
+    margin-bottom: 30px;
+}
+
+body .acf-range-wrap input[type="number"][style] {
+    width: 6em !important;
+}
+
+body .acf-button-group {
+    flex-wrap: wrap;
+}
+
+body.wp-admin .acf-admin-single-field-group .acf-field-object-flexible-content .acf-is-subfields .acf-field-object .acf-label, body.wp-admin .acf-admin-single-field-group .acf-field-object-flexible-content .acf-is-subfields .acf-field-object .acf-input {
+    max-width: none;
+}
+
+body .acf-tab-group {
+    padding-top: 15px;
+}
+
+body .acf-tab-group li a {
+    position: relative;
+    border-top-width: 3px;
+    padding: 6px 16px;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+body .acf-tab-group li.active a {
+    color: var(--secondary-color);
+}
+
+body .acf-tab-group li.active a::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    content: ' ';
+    width: 100%;
+    height: 1px;
+    background-color: #FFF;
+}
+
+body .acf-fields > .acf-tab-wrap .acf-tab-group li.active a {
+    border-top-color: var(--secondary-color);
+}
+
+body .acf-fields input[type="checkbox"],
+body .acf-fields input[type="color"],
+body .acf-fields input[type="date"],
+body .acf-fields input[type="datetime-local"],
+body .acf-fields input[type="datetime"],
+body .acf-fields input[type="email"],
+body .acf-fields input[type="month"],
+body .acf-fields input[type="number"],
+body .acf-fields input[type="password"],
+body .acf-fields input[type="radio"],
+body .acf-fields input[type="search"],
+body .acf-fields input[type="tel"],
+body .acf-fields input[type="text"],
+body .acf-fields input[type="time"],
+body .acf-fields input[type="url"],
+body .acf-fields input[type="week"],
+body .acf-fields select,
+body .acf-fields textarea {
+    box-shadow: inset 0 0 0 1px transparent;
+    transition: all 0.3s;
+}
+
+body .acf-fields input[type="checkbox"]:focus,
+body .acf-fields input[type="color"]:focus,
+body .acf-fields input[type="date"]:focus,
+body .acf-fields input[type="datetime-local"]:focus,
+body .acf-fields input[type="datetime"]:focus,
+body .acf-fields input[type="email"]:focus,
+body .acf-fields input[type="month"]:focus,
+body .acf-fields input[type="number"]:focus,
+body .acf-fields input[type="password"]:focus,
+body .acf-fields input[type="radio"]:focus,
+body .acf-fields input[type="search"]:focus,
+body .acf-fields input[type="tel"]:focus,
+body .acf-fields input[type="text"]:focus,
+body .acf-fields input[type="time"]:focus,
+body .acf-fields input[type="url"]:focus,
+body .acf-fields input[type="week"]:focus,
+body .acf-fields select:focus,
+body .acf-fields textarea:focus {
+    border-color: var(--secondary-color);
+    box-shadow: inset 0 0 0 1px var(--secondary-color);
+    outline: 2px solid transparent;
+}
+
+body .acf-repeater .acf-row,
+body .acf-repeater .acf-row .acf-row-handle {
+    transition: all 0.3s;
+}
+
+body .acf-repeater .acf-row:not(:last-child)::after {
+    display: table-row;
+    height: 10px;
+}
+
+body .acf-repeater .acf-row:hover,
+body .acf-repeater .acf-row.-hover {
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+body .acf-repeater .acf-row:hover .acf-row-handle.order,
+body .acf-repeater .acf-row.-hover .acf-row-handle.order {
+    color: #333;
+    background-color: #FFF;
+}
+
+body .acf-repeater .acf-row-handle .acf-icon {
+    top: 5px;
+    left: 50%;
+    margin: 0;
+    transform: translateX(-50%);
+}
+
+body .acf-repeater .acf-row-handle.order .acf-icon.small,
+body .acf-repeater .acf-row-handle.order .acf-icon.-small {
+    display: block;
+    border-color: var(--highlight-color);
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    font-size: 15px;
+    color: var(--highlight-color);
+}
+
+body .acf-repeater .acf-row.-collapsed .acf-row-handle.order .acf-icon.small,
+body .acf-repeater .acf-row.-collapsed .acf-row-handle.order .acf-icon.-small {
+    color: #777;
+    border-color: #777;
+}
+
+body.wp-core-ui .acf-actions a.button-primary[data-name="add-layout"] {
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+body.wp-core-ui .acf-actions a.button-primary[data-event="add-row"] {
+    border-color: var(--highlight-color);
+    background: var(--highlight-color);
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+body.wp-core-ui .acf-actions a.button-primary[data-name="add-layout"]:hover,
+body.wp-core-ui .acf-actions a.button-primary[data-name="add-layout"]:focus-visible,
+body.wp-core-ui .acf-actions a.button-primary[data-event="add-row"]:hover,
+body.wp-core-ui .acf-actions a.button-primary[data-event="add-row"]:focus-visible {
+    border-color: var(--secondary-color);
+    background: var(--secondary-color);
+}
+
+body .acf-switch.-on,
+body .acf-button-group label.selected {
+    border-color: var(--secondary-color);
+    background: var(--secondary-color);
+}
+
+/**
+ * Style ACF Module Preview
+ */
+ .module-preview {
+    position: absolute;
+    right: 100%;
+    top: 0;
+    padding: 20px;
+    background-color: #FFF;
+    z-index: 1;
+}
+.module-preview img {
+    width: 500px;
+    box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.acf-tooltip li:hover {
+    background-color: #FFF;
+}
